@@ -16,5 +16,5 @@ Prediction and Analysis of Liver Patient Data is a project that aims to gain ins
 [Demo Video](https://drive.google.com/file/d/18XS7N44tEg4yYL45Ccf6sKD1G9e6q4jl/view?usp=sharing)
 
 ## Screenshots
-[SS1](images/ss1.jpeg)
-[SS2](images/ss2.jpeg)
+![SS1](images/ss1.jpeg)
+![SS2](images/ss2.jpeg)
