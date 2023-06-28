@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Liver Disease Prediction</title>
+	<style>
+		form {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		input[type="text"], select {
+			margin: 10px;
+			padding: 5px;
+			width: 200px;
+			border-radius: 5px;
+			border: none;
+			box-shadow: 0px 0px 5px grey;
+		}
+		input[type="submit"] {
+			margin: 20px;
+			padding: 10px;
+			width: 100px;
+			border-radius: 5px;
+			border: none;
+			background-color: #4CAF50;
+			color: white;
+			font-weight: bold;
+			box-shadow: 0px 0px 5px grey;
+			cursor: pointer;
+		}
+		body {
+        		background-color: yellow;
+      		}
+      		h1 {
+        		border: 2px solid blue;
+			color: white;
+			background-color: blue;
+        		background-clip: padding-box;
+        		padding: 10px;
+      		}
+	</style>
+</head>
+<body>
+	<h1>Liver Disease Prediction</h1>
+	<form action="/predict" method="post">
+		<label for="age">Age:</label>
+		<input type="text" id="age" name="age" required>
+		<label for="gender">Gender:</label>
+		<select id="gender" name="gender" required>
+			<option value="male">Male</option>
+			<option value="female">Female</option>
+		</select>
+		<label for="tbil">Total Billrubin:</label>
+		<input type="text" id="tbil" name="tbil" required>
+		<label for="dbil">Direct Billrubin:</label>
+		<input type="text" id="dbil" name="dbil" required>
+		<label for="alp">Alkaline Phosphotase:</label>
+		<input type="text" id="alp" name="alp" required>
+		<label for="alt">Alamine Aminotransferase:</label>
+		<input type="text" id="alt" name="alt" required>
+		<label for="ast">Asparte Aminotransferase:</label>
+		<input type="text" id="ast" name="ast" required>
+		<label for="tp">Total Proteins:</label>
+		<input type="text" id="tp" name="tp" required>
+		<label for="alb">Albumin:</label>
+		<input type="text" id="alb" name="alb" required>
+		<label for="agr">Albumin and Globulin Ratio:</label>
+		<input type="text" id="agr" name="agr" required>
+		<input type="submit" value="Submit">
+	</form>
+</body>
+</html>
